@@ -4,34 +4,56 @@ Välkommen till Sebastians FunShop - din destination för roliga och unika produ
 ## Installation
 1. Se till att du har Python 3.8 eller senare installerat
 2. Klona detta repository:
+```bash
+git clone https://github.com/G1Squad/SebastiansFanShop.git
+cd SebastiansFanShop
 ```
-git clone https://github.com/G1Squad/funshop.git
-cd FunShopBase
-```
-## Uppsättning
-3. Skapa en virtuell miljö och aktivera den:
 
-För Mac/Linux:
+## Konfigurering
+3. Starta databasen med Docker:
+```bash
+docker-compose up -d
 ```
+
+4. Kopiera exempel-miljöfilen och konfigurera den:
+
+För Mac:
+```bash
+cp .env.example .env
+```
+
+För Windows:
+```bash
+copy .env.example .env
+```
+Öppna .env-filen och uppdatera inställningarna efter behov.
+
+5. Skapa en virtuell miljö och aktivera den:
+
+För Mac:
+```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
 För Windows:
-```
+```bash
 python -m venv venv
 .\venv\Scripts\activate
 ```
-4. Installera dependencies:
-```
+
+6. Installera dependencies:
+```bash
 pip install -r requirements.txt
 ```
-5. Starta Flask-servern:
-```
+
+7. Starta Flask-servern:
+```bash
 python app.py
 ```
 eller
-```
+```bash
 flask run
 ```
-6. Öppna din webbläsare och gå till `http://127.0.0.1:5000` för att se hemsidan.
+
+8. Öppna din webbläsare och gå till `http://127.0.0.1:5000` för att se hemsidan.
