@@ -10,12 +10,7 @@ cd SebastiansFanShop
 ```
 
 ## Konfigurering
-3. Starta databasen med Docker:
-```bash
-docker-compose up -d
-```
-
-4. Kopiera exempel-miljöfilen och konfigurera den:
+3. Kopiera exempel-miljöfilen och konfigurera den:
 
 För Mac:
 ```bash
@@ -27,6 +22,11 @@ För Windows:
 copy .env.example .env
 ```
 Öppna .env-filen och uppdatera inställningarna efter behov.
+
+4. Starta databasen med Docker:
+```bash
+docker-compose up -d
+```
 
 5. Skapa en virtuell miljö och aktivera den:
 
@@ -55,5 +55,4 @@ eller
 ```bash
 flask run
 ```
-.."Hej första andring"..
 8. Öppna din webbläsare och gå till `http://127.0.0.1:5000` för att se hemsidan.
